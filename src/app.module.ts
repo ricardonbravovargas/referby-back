@@ -34,12 +34,12 @@ import { EmpresaAnalyticsModule } from './empresa/empresa-analytics.module';
 
     TypeOrmModule.forRoot({
       type: 'postgres',
-      url: process.env.DATABASE_URL,     
-      //host: process.env.DB_HOST,
-      //port: Number.parseInt(process.env.DB_PORT || '5432'),
-      //username: process.env.DB_USERNAME,
-      //password: process.env.DB_PASSWORD,
-      //database: process.env.DB_NAME,
+      url: process.env.DATABASE_URL,
+      // host: process.env.DB_HOST,
+      // port: Number.parseInt(process.env.DB_PORT || '5432'),
+      // username: process.env.DB_USERNAME,
+      // password: process.env.DB_PASSWORD,
+      // database: process.env.DB_NAME,
       autoLoadEntities: true,
       entities: [
         User,
